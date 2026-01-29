@@ -2,7 +2,9 @@
 
 --Pseudocode #1--
 //Ask the user to input text "Hello World!"
-  INPUT = Hello World!
+  DECLARE INPUT = INTEGER
+
+Enter "Hello World!"- Hello World!
 
 IF INPUT isn't Hello World! (eg. HELLO WORLD!, H3ll0 W0r1d!)
   Loop back to ask the user for the Input
@@ -13,24 +15,28 @@ ELSE
 PRINT the Output
 --Pseudocode #2--
 //Ask the user to input two numbers
-INPUT1 = x
-INPUT2 = y
-RESULT = z
+DECLARE INPUT1 = INTEGER
+DECLARE INPUT2 = INTEGER
+DECLARE RESULT = STRING
 
 Enter the first number (x): 10
 Enter the second number (y): 12
 
 // Calculate to add the numbers
-x + y = z
+INPUT1 + INPUT2 = RESULT
 
 //Output the result
 The Total number is (RESULT)
 
 --Pseudocode #3--
-// Ask the user for a number each number is randomized between 0 and user input's number, if user doesn't ask for another, add all of them.
-Enter the MAX Number: 100
+// Ask the user for a number afterwards each number is randomized between 0 and user input's number, if user doesn't ask for another, add all of them.
+DECLARE Total : INTEGER
+DECLARE UserInput : INTEGER
+DECLARE askAgain : STRING
+DECLARE randomNumber : INTEGER
 
 // Ask the computer to display a random number between 0 and the user's input.
+The TOTAL = 0
 
 OUTPUT: 54
 
@@ -50,7 +56,7 @@ ODD = LEFT
 // Ask the computer to randomly generate list of numbers.
 
 // Calculate to see if Code is even or odd
-IF number MOD 2 == 0 THEN
+IF number 2 == 0 THEN
         number is EVEN
     ELSE
         The number is ODD
