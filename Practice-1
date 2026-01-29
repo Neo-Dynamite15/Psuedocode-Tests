@@ -1,0 +1,68 @@
+--File for Psuedocode Tests--
+
+--Pseudocode #1--
+//Ask the user to input text "Hello World!"
+  INPUT = Hello World!
+
+IF INPUT isn't Hello World! (eg. HELLO WORLD!, H3ll0 W0r1d!)
+  Loop back to ask the user for the Input
+
+ELSE
+  Convert INPUT to have all caps
+
+PRINT the Output
+--Pseudocode #2--
+//Ask the user to input two numbers
+INPUT1 = x
+INPUT2 = y
+RESULT = z
+
+Enter the first number (x): 10
+Enter the second number (y): 12
+
+// Calculate to add the numbers
+x + y = z
+
+//Output the result
+The Total number is (RESULT)
+
+--Pseudocode #3--
+// Ask the user for a number each number is randomized between 0 and user input's number, if user doesn't ask for another, add all of them.
+Enter the MAX Number: 100
+
+// Ask the computer to display a random number between 0 and the user's input.
+
+OUTPUT: 54
+
+Another number? (Y/N) Y
+
+Random Number: 22
+IF User inputs N
+  Add numbers to the total result and display.
+ELSE User inputs Y
+  Output a random number between 0 and the User input's number.
+
+--Pseudocode #5--
+// Print numbers RIGHT if they're even, if not print LEFT
+EVEN = RIGHT
+ODD = LEFT
+
+// Ask the computer to randomly generate list of numbers.
+
+// Calculate to see if Code is even or odd
+IF number MOD 2 == 0 THEN
+        number is EVEN
+    ELSE
+        The number is ODD
+
+// Display random set of 10 numbers
+IF number is Even: display the Output as "RIGHT"
+
+IF number is Odd: display the Output as "LEFT"
+
+Display the total amount of RIGHT and LEFT
+RIGHT: 3
+LEFT: 7
+
+
+
