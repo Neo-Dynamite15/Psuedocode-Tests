@@ -1,1 +1,43 @@
+// Guessing Game
+// Ask the computer to display a random number between 1 and 100
 
+  SET guessingnumber TO RANDOM INTEGER BETWEEN 1 AND 100
+
+// Set user choices
+  SET INPUT number
+  DECLARE replayChoice : STRING
+  SET replayChoice TO "yes"
+
+// Set number of attempts to guess
+  SET attempts TO 0
+  SET maxAttempts TO 7
+  SET WIN TO FALSE
+
+// Ask the user to guess the number
+  OUTPUT: "Choose a number from 1 to 100."
+
+// Win Condition and Attempt Repeats
+IF
+  INPUT: number EQUALS guessingnumber THEN SET WIN TO TRUE
+  OUTPUT: "You Win!"
+ELSE
+  INCREMENT ATTEMPTS BY 1
+  OUTPUT: "Wrong, guess again! Attempts left: (maxattempts - attempts)
+ENDIF
+
+UNTIL authenticated IS TRUE OR attempts >= maxAttempts
+
+// Lose Condition
+IF authenticated IS FALSE THEN
+    OUTPUT "Game Over..."
+
+WHILE (replayChoice IS "yes" OR replayChoice IS "y")
+    // Ask the user if they want to replay
+    OUTPUT "Do you want to play again? (yes/no)"
+    INPUT replayChoice
+    
+    // Optional: Convert input to lowercase for consistent checking
+    SET replayChoice TO LOWERCASE(replayChoice)
+ENDWHILE
+
+OUTPUT "Thanks for playing! Goodbye."
